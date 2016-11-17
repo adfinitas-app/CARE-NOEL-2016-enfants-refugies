@@ -1,0 +1,124 @@
+@font-face {
+	font-family: "ITC Officina";
+	src: url('../fonts/ITC_Officina_Serif_Bold_Italic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: "ITC Officina";
+	src: url('../fonts/ITC_Officina_Serif_Bold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "ITC Officina Book";
+	src: url('../fonts/ITC_Officina_Serif_Book_Italic.ttf');
+	font-style: italic;
+}
+@font-face {
+	font-family: "ITC Officina Book";
+	src: url('../fonts/ITC_Officina_Serif_Book.ttf');
+}
+@font-face {
+	font-family: "Newzald";
+	src: url('../fonts/newzald-medium.ttf');
+}
+@font-face {
+	font-family: "48";
+	src: url('../fonts/48.ttf');
+}
+
+
+#header {
+	padding-top: 10px;
+	max-width: 100%;
+	background-color: #f1eeea;
+}
+
+#logo {
+	max-width: 80px;
+}
+
+.block-header {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	line-height: 90px;
+}
+
+.block-header:before {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	height: 100%;
+}
+
+.block-header p {
+	font-size: 20px;
+	color: #2c1313;
+	font-family: 'ITC Officina';
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 0;
+	display: inline-block;
+	vertical-align: bottom;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	margin-right: 20px;
+}
+#slide-show {
+	padding-top: 10px;
+}
+#slide-show h1, h3 {
+	text-align: center;
+}
+#slide-show h1 {
+	line-height: 1;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: "ITC Officina";
+	font-weight: bold;
+	color: #aa1b4f;
+}
+#slide-show h3 {
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 20px;
+	color: #1a0b0b;
+}
+
+.slide-show {
+	padding: 40px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-slide-1.jpg');
+}
+.text-container-slide-show {
+	width: 300px;
+}
+.button-container-slide-show {
+	display: inline;
+}
+.button-container-slide-show img {
+	display: inline-block;
+}
+
+.titre-slide-show,
+.text-slide-show {
+	font-family: 'Open Sans';
+	color: #FFFFFF;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.text-slide-show {
+	font-weight: 400;
+}
+
+@media only screen and (max-width:730px) {
+	.block-header p {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+	.block-header p:nth-child(2) {
+		margin-right: 0px;
+	}
+	#header {
+		padding-right: 0;
+	}
+}
