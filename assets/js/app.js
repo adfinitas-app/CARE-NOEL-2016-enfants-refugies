@@ -4,24 +4,44 @@ $(window).resize( function() {
 });
 
 $(document).ready( function() {
-	var slide = 0;
+	adjust_don_box();
 
-	$('.btn-prev').click( function() {
-		slide = changeSlide(slide - 1);
-	});
-	$('.btn-suiv').click( function() {
-		slide = changeSlide(slide + 1);
+	$(function(){
+		$("#slides").slidesjs({
+			pagination: {
+				active: false,
+				effect: "slide"
+			},
+			width: 940,
+			height: 528,
+			navigation: {
+				active: false,
+				effect: "slide"
+			}
+		});
 	});
 });
 
-var img_slide = ['https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-slide-1.jpg', 
-'https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-slide-2.jpg',
-'https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-slide-3.jpg'];
-var text_slide = [];
-var titre_slide = [];
+$(".btn-temoignage").click(function () {
+	var clas;
+	var str1 = ".div-temoignage";
 
+	if ($(this).hasClass('un'))
+		clas='.un';
+	else if ($(this).hasClass('deux'))
+		clas='.deux';
+	else if ($(this).hasClass('trois'))
+		clas='.trois';
+	clas = str1.concat(clas);
+	$(clas).animate({ width: "90%" }, 
+	{
+		duration: 1000,
+		specialEasing: {
+			width: 'linear'
+		}
+	});
+});
 
-adjust_don_box();
 function 	adjust_don_box() {
 	var		max;
 
@@ -33,35 +53,4 @@ function 	adjust_don_box() {
 	});
 	$(".box-description").css({"height" : max});
 }
-
-function 	changeSlide(slide) {
-	var i = 0;
-
-	if (slide == -1)
-		slide = 2;
-	else if (slide == 3)
-		slide = 0;
-
-	$('.slide-show').each( function() {
-		$(this).fadeOut(300);
-		if (i == slide) {
-			$(this).delay(300).fadeIn(300);
-		}
-		i++;
-	});
-	return slide;
-}
-
-function 	appearSlide(slide) {
-	$('.slide-show').each( function() {
-
-
-	});
-
-}
-
-
-
-
-
 

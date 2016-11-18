@@ -27,6 +27,11 @@
 	src: url('../fonts/48.ttf');
 }
 
+.max-width {
+	margin: auto !important;
+	max-width: 75rem !important;
+}
+
 
 #header {
 	padding-top: 10px;
@@ -70,7 +75,6 @@
 }
 #slide-show {
 	padding-top: 20px;
-	padding-bottom: 20px;
 }
 #slide-show h1, h3 {
 	text-align: center;
@@ -90,9 +94,18 @@
 	color: #1a0b0b;
 }
 
+#slides {
+	display: none;
+}
+
+.slidesjs-container,
+.slidesjs-control,
+#slides {
+	min-height: 500px !important;
+	max-height: 550px !important;
+}
 .slide-show {
 	height: 500px;
-	position: relative;
 	padding: 60px;
 	background-repeat: no-repeat;
 	background-position: 70% 50%;
@@ -265,6 +278,111 @@ footer .grey{
 
 footer .lgrey{
 	color: #707070;
+}
+
+#slide-bg-jaune {
+	padding-top: 20px;
+	max-width: 100%;
+	background-color: #f89f1f;
+}
+
+#slide-bg-jaune h2 {
+	color: white;
+	font-family: "ITC Officina";
+	font-weight: bold;
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.box-infos {
+	padding: 30px 30px 5px 30px;
+}
+.box-infos img{
+	margin-bottom: 15px;
+}
+.box-infos p{
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Open Sans';
+	font-weight: bold;
+}
+#slide-bg-white  {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#slide-bg-white h2 {
+	line-height: 1.2;
+	font-size: 28px;
+	color: #076177;
+	text-transform: uppercase;
+	font-family: "ITC Officina";
+	font-weight: bold;
+}
+#slide-bg-white p {
+	color: #1a0b0b;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#slide-row-infos {
+	max-width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f9f9f9;
+}
+.row-infos {
+	padding: 20px;
+	max-width: 900px;
+	min-height: 250px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 70% 50%;
+}
+.row-infos h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	color: #f9781c;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-style: italic;
+}
+.row-infos p:nth-child(2) {
+	font-size: 16px;
+	line-height: 1.2;
+	color: #f9781c;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: italic;
+}
+.row-infos img {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.row-infos.un {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-1.jpg');
+}
+.row-infos.deux {
+	margin-top: 25px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-2.jpg');
+}
+.row-infos.trois {
+	margin-top: 25px;
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-3.jpg');
+}
+
+.div-temoignage{
+	max-width: 900px;
+	min-height: 250px;
+}
+.div-temoignage{
+	display: none;
+	top : 0;
+	position: absolute;
+	width: 0;
 }
 
 @media only screen and (max-width:730px) {
