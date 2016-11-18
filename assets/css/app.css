@@ -65,7 +65,8 @@
 	margin-right: 20px;
 }
 #slide-show {
-	padding-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 #slide-show h1, h3 {
 	text-align: center;
@@ -86,8 +87,23 @@
 }
 
 .slide-show {
-	padding: 40px;
+	height: 500px;
+	position: relative;
+	padding: 60px;
+	background-repeat: no-repeat;
+	background-position: 70% 50%;
+}
+.slide-show.un {
 	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-slide-1.jpg');
+}
+.slide-show.deux {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-slide-2.jpg');
+	display: none;
+}
+.slide-show.trois {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-slide-3.jpg');
+	display: none;
+	float: none !important;
 }
 .text-container-slide-show {
 	width: 300px;
@@ -96,9 +112,13 @@
 	display: inline;
 }
 .button-container-slide-show img {
+	max-width: 234px;
 	display: inline-block;
+	margin-top: 10px;
 }
-
+.titre-slide-show {
+	text-transform: uppercase;
+}
 .titre-slide-show,
 .text-slide-show {
 	font-family: 'Open Sans';
@@ -108,6 +128,28 @@
 }
 .text-slide-show {
 	font-weight: 400;
+}
+.un .text-slide-show {
+	margin-bottom: 140px;
+}
+.deux .text-slide-show {
+	margin-bottom: 80px;
+}
+.trois .text-slide-show {
+	margin-bottom: 100px;
+}
+
+.btn-prev {
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 49%;
+}
+.btn-suiv {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 49%;
 }
 
 @media only screen and (max-width:730px) {
@@ -120,5 +162,11 @@
 	}
 	#header {
 		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width:1160px) {
+	.button-container-slide-show img {
+		max-width: 100%;
 	}
 }
