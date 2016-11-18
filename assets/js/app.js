@@ -1,5 +1,6 @@
 $(window).resize( function() {
 	console.log($(window).innerWidth());
+	adjust_don_box();
 });
 
 $(document).ready( function() {
@@ -20,7 +21,20 @@ var text_slide = [];
 var titre_slide = [];
 
 
-function changeSlide(slide) {
+adjust_don_box();
+function 	adjust_don_box() {
+	var		max;
+
+	$(".box-description").css({"height" : "auto"})
+	max = $(".box-description").first().height();
+	$(".box-description").each(function(){
+		if ($(this).height() > max)
+			max = $(this).height();
+	});
+	$(".box-description").css({"height" : max});
+}
+
+function 	changeSlide(slide) {
 	var i = 0;
 
 	if (slide == -1)
@@ -38,7 +52,7 @@ function changeSlide(slide) {
 	return slide;
 }
 
-function appearSlide(slide) {
+function 	appearSlide(slide) {
 	$('.slide-show').each( function() {
 
 
