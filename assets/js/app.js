@@ -1,8 +1,11 @@
 $(window).resize( function() {
 	console.log($(window).innerWidth());
+	adjust_don_box();
 });
 
 $(document).ready( function() {
+	adjust_don_box();
+
 	$(function(){
 		$("#slides").slidesjs({
 			pagination: {
@@ -30,12 +33,24 @@ $(".btn-temoignage").click(function () {
 	else if ($(this).hasClass('trois'))
 		clas='.trois';
 	clas = str1.concat(clas);
-	$(clas).animate({
-		width: "90%"
-	}, {
+	$(clas).animate({ width: "90%" }, 
+	{
 		duration: 1000,
 		specialEasing: {
 			width: 'linear'
 		}
 	});
 });
+
+function 	adjust_don_box() {
+	var		max;
+
+	$(".box-description").css({"height" : "auto"})
+	max = $(".box-description").first().height();
+	$(".box-description").each(function(){
+		if ($(this).height() > max)
+			max = $(this).height();
+	});
+	$(".box-description").css({"height" : max});
+}
+

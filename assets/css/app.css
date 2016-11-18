@@ -43,6 +43,10 @@
 	max-width: 80px;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .block-header {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
@@ -164,6 +168,117 @@
 	right: 10px;
 	top: 49%;
 }
+#slide-don {
+	background-color: #076177;
+	padding: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+#slide-don > *, .box-price > * {
+	display: inline-block;
+}
+#slide-don > h2 {
+	color: white;
+	font-family: "ITC Officina", serif;
+	font-size: 25px;
+	line-height: 1;
+	text-transform: uppercase;
+	max-width: 800px;
+	margin-bottom: 40px;
+}
+.box-container {
+	margin-bottom: 30px;
+}
+.box-price {
+	width: 28%;
+	display: inline-block;
+	max-width: 320px;
+	background-color: #f1eeea;
+	margin: 1.5%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.box-price > h3 {
+	font-family: "ITC Officina", serif;
+	font-size: 70px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 0px;
+}
+.box-price > h3 > span {
+	font-size: 40px;
+	vertical-align: top;
+}
+.box-price > p {
+	font-family: "Open Sans";
+	font-size: 12px;
+	line-height: 1.4;
+}
+.box-description {
+	font-size: 15px !important;
+	margin-bottom: 20px;
+}
+
+#slide-reduc {
+	text-align: center;
+	padding: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#slide-reduc *{
+	display: inline-block;
+}
+
+#slide-reduc img {
+	margin-bottom: 30px;
+}
+
+#slide-reduc h3 {
+	color: #076177;
+	font-family: "ITC Officina", serif;
+	font-size: 25px;
+	line-height: 1;
+	text-transform: uppercase;
+	max-width: 900px;
+}
+
+footer {
+	text-align: center;
+	font-family: 'PT Sans';
+	background-color: #2d1313;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 50px;
+}
+
+footer *{
+	display: inline-block;
+	font-size: 14px;
+	margin: 5px;
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 1;
+}
+
+footer a{
+	color: #ffc800;
+	text-decoration: underline;
+}
+
+footer img:last-child {
+	margin-top: 25px;
+}
+
+footer .grey{
+	color: #656565;
+	font-size: 12px;
+}
+
+footer .lgrey{
+	color: #707070;
+}
 
 #slide-bg-jaune {
 	padding-top: 20px;
@@ -211,6 +326,12 @@
 	font-size: 18px;
 }
 
+#slide-row-infos {
+	max-width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f9f9f9;
+}
 .row-infos {
 	padding: 20px;
 	max-width: 900px;
@@ -258,6 +379,7 @@
 	min-height: 250px;
 }
 .div-temoignage{
+	display: none;
 	top : 0;
 	position: absolute;
 	width: 0;
@@ -274,10 +396,20 @@
 	#header {
 		padding-right: 0;
 	}
+	.box-price {
+		width: 45%;
+	}
 }
 
 @media only screen and (max-width:1160px) {
 	.button-container-slide-show img {
 		max-width: 100%;
+	}
+}
+
+
+@media only screen and (max-width:600px) {
+	.box-price {
+		width: 90%;
 	}
 }
