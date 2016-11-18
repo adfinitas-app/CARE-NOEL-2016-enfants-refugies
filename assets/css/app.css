@@ -349,7 +349,7 @@ footer .lgrey{
 	font-weight: 800;
 	font-style: italic;
 }
-.row-infos + p {
+.row-infos p:nth-child(2) {
 	font-size: 16px;
 	line-height: 1.2;
 	color: #f9781c;
