@@ -101,7 +101,7 @@ function 	scrollTo(next){
 	if ($(next).length != 0)
 	{
 		$('html, body').stop().animate({
-			scrollTop: $(next).offset().top + 1
+			scrollTop: $(next).offset().top - 95
 		}, 700, 'swing');
 		return false;
 	}
