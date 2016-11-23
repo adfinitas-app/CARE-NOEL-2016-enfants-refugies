@@ -34,6 +34,7 @@
 
 
 #header {
+	position: relative;
 	max-width: 100%;
 }
 .container-fixed-header {
@@ -44,7 +45,39 @@
 }
 
 #logo {
+	float: right;
 	max-width: 80px;
+}
+#burger {
+	margin-top: 61px;
+}
+#dropdown-menu {
+	width: 100%;
+	margin-top: 95px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: none;
+	z-index: 9999;
+	position: fixed;
+	background-color: #F1EEEA;
+}
+#dropdown-menu p {
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #2c1313;
+	font-family: 'ITC Officina';
+	font-weight: bold;
+	line-height: 1;
+}
+.element-d-menu {
+	margin-right: 10px !important;
+	margin-left: 10px !important;
+	padding-top: 5px;
+	border-top: 2px solid #FE7633;
+}
+.element-d-menu.last {
+	border-bottom: 2px solid #FE7633;
 }
 
 .bold {
@@ -456,13 +489,19 @@ footer .lgrey{
 }
 
 @media only screen and (max-width:640px) {
-	.dessus.un {
+	.dessus.un,
+	.dessous.un {
 		background-position: 60% 90%;
 	}
-	.dessus.deux {
+	.dessus.deux
+	.dessous.deux {
 		background-position: 30% 90%;
 	}
-	.dessus.trois {
+	.dessus.trois 
+	.dessous.trois {
 		background-position: 30% 90%;
+	}
+	#logo {
+		float: none;
 	}
 }

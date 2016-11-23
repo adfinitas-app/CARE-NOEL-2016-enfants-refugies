@@ -75,12 +75,28 @@ $('.btn-temoignage').click( function() {
 	});
 });
 
-$('#link-1-header').click( function() {
+$('.link-1-header').click( function() {
+	$('#slide-show').css({"margin-top":"120px"});
+	$("#dropdown-menu").hide();
 	scrollTo($('#slide-show'));
 });
-$('#link-2-header').click( function() {
+$('.link-2-header').click( function() {
+	$('#slide-show').css({"margin-top":"120px"});
+	$("#dropdown-menu").hide();
 	scrollTo($('#slide-bg-white'));
 });
+
+$('#burger').click( function() {
+	if ($("#dropdown-menu").css('display') == 'none') {
+		$('#slide-show').css({"margin-top":"200px"});
+		$("#dropdown-menu").show();
+	}
+	else {
+		$('#slide-show').css({"margin-top":"120px"});
+		$("#dropdown-menu").hide();
+	}
+});
+
 function 	scrollTo(next){
 	if ($(next).length != 0)
 	{
