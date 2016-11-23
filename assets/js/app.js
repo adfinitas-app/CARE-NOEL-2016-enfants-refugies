@@ -21,10 +21,11 @@ $(document).ready( function() {
 		});
 	});
 });
-
+/*
 $(".btn-temoignage").click(function () {
+	console.log('Hello');
 	var clas;
-	var str1 = ".div-temoignage";
+	var str1 = ".row-infos";
 
 	if ($(this).hasClass('un'))
 		clas='.un';
@@ -33,14 +34,56 @@ $(".btn-temoignage").click(function () {
 	else if ($(this).hasClass('trois'))
 		clas='.trois';
 	clas = str1.concat(clas);
-	$(clas).animate({ width: "90%" }, 
+	$('.div-temoignage').css({'width'}:'0%');
+	/*$(".div-temoignage").animate({ width: "100%" }, 
 	{
 		duration: 1000,
 		specialEasing: {
 			width: 'linear'
 		}
 	});
+});*/
+
+$('.btn-temoignage').click( function() {
+	var classe;
+	var str1 = ".dessus";
+	var str2 = ".container-down-small"
+
+	if ($(this).hasClass('un'))
+		classe = ".un";
+	else if ($(this).hasClass('deux'))
+		classe = ".deux";
+	else if ($(this).hasClass('trois'))
+		classe = ".trois";
+	if ($(window).width() < 640) {
+		classe = str2.concat(classe);
+		console.log(classe);
+		scrollTo($(classe));
+		return false;
+	}
+	classe = str1.concat(classe);
+	$(classe).animate({
+		width: "0%"
+	}, {
+		duration: 800,
+		specialEasing: {
+			width: "linear",
+		},
+		complete: function() {
+			$(classe).css({"display":"none"});
+		}
+	});
 });
+
+function 	scrollTo(next){
+	if ($(next).length != 0)
+	{
+		$('html, body').stop().animate({
+			scrollTop: $(next).offset().top + 1
+		}, 700, 'swing');
+		return false;
+	}
+};
 
 function 	adjust_don_box() {
 	var		max;

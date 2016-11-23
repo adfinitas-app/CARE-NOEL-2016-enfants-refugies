@@ -27,6 +27,7 @@
 	src: url('../fonts/48.ttf');
 }
 
+
 .max-width {
 	margin: auto !important;
 	max-width: 75rem !important;
@@ -168,6 +169,39 @@
 	right: 10px;
 	top: 49%;
 }
+
+.dessus {
+	width: 100%; 
+	min-height: 250px; 
+	position: absolute; 
+	z-index: 8;
+}
+.dessus.un {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-1.jpg'); 
+}
+.dessus.deux {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-2.jpg'); 
+}
+.dessus.trois {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-3.jpg'); 
+}
+
+.dessous {
+	position: relative; 
+	z-index: 7;
+	width: 100%; 
+	min-height: 250px; 
+}
+.dessous.un {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-1-transparent.jpg');
+}
+.dessous.deux {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-2-transparent.jpg'); 
+}
+.dessous.trois {
+	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-3-transparent.jpg'); 
+}
+
 #slide-don {
 	background-color: #076177;
 	padding: 50px;
@@ -328,19 +362,42 @@ footer .lgrey{
 
 #slide-row-infos {
 	max-width: 100%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #f9f9f9;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/bg-texture.jpg");
 }
-.row-infos {
+
+.container-down {
 	padding: 20px;
-	max-width: 900px;
-	min-height: 250px;
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: 70% 50%;
+	position: absolute; 
+	z-index: 3; 
+	overflow: hidden;
 }
-.row-infos h2 {
+.container-down p,
+.container-down-small p {
+	color: #1a0b0b;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.container-down-small {
+	background-color: #e6e0dd;
+	padding: 20px;
+}
+
+.container-up {
+	padding: 20px;
+	position: absolute; 
+	z-index: 5; 
+	overflow: hidden; 
+	white-space:nowrap;
+	width: 100%;
+	height: 100%;
+}
+
+.container-up  h2,
+.container-down  h2{
 	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 1.2;
@@ -349,7 +406,7 @@ footer .lgrey{
 	font-weight: 800;
 	font-style: italic;
 }
-.row-infos p:nth-child(2) {
+.container-up  p:nth-child(2) {
 	font-size: 16px;
 	line-height: 1.2;
 	color: #f9781c;
@@ -357,33 +414,13 @@ footer .lgrey{
 	font-weight: 400;
 	font-style: italic;
 }
-.row-infos img {
+.container-up img {
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
-}
-.row-infos.un {
-	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-1.jpg');
-}
-.row-infos.deux {
-	margin-top: 25px;
-	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-2.jpg');
-}
-.row-infos.trois {
-	margin-top: 25px;
-	background-image: url('https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-temoignage-3.jpg');
+	bottom: 30px;
+	right: 0;
 }
 
-.div-temoignage{
-	max-width: 900px;
-	min-height: 250px;
-}
-.div-temoignage{
-	display: none;
-	top : 0;
-	position: absolute;
-	width: 0;
-}
+
 
 @media only screen and (max-width:730px) {
 	.block-header p {
@@ -411,5 +448,17 @@ footer .lgrey{
 @media only screen and (max-width:600px) {
 	.box-price {
 		width: 90%;
+	}
+}
+
+@media only screen and (max-width:640px) {
+	.dessus.un {
+		background-position: 60% 90%;
+	}
+	.dessus.deux {
+		background-position: 30% 90%;
+	}
+	.dessus.trois {
+		background-position: 30% 90%;
 	}
 }
