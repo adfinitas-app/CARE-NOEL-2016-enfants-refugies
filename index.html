@@ -7,20 +7,24 @@
 	<title>Care</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
 	<link rel='stylesheet' href='assets/css/app.css' type='text/css'/>
+	<link rel='stylesheet' href='assets/css/remodal.css' type='text/css'/>
+	<link rel='stylesheet' href='assets/css/remodal-default-theme.css' type='text/css'/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div class="row" id="header">
-			<div class="max-width">
-				<div class="small-3 medium-2 large-3 columns">
-					<img class="float-center" id="logo" alt="Logo Care" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-logo.png">
-				</div>
-				<div class="small-6 medium-10 large-9 columns block-header">
-					<a href=""><p class="hide-for-small-only">Je n'ai jamais connu</p></a>
-					<a href=""><p class="hide-for-small-only">L'action de care</p></a>
-					<img class="float-right" alt="Je donne" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-jedonne.png">
+			<div class="container-fixed-header">
+				<div class="max-width">
+					<div class="small-3 medium-2 large-3 columns">
+						<img class="float-center" id="logo" alt="Logo Care" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-logo.png">
+					</div>
+					<div class="small-6 medium-10 large-offset-2 large-7 columns block-header">
+						<a id="link-1-header"><p class="hide-for-small-only">Je n'ai jamais connu</p></a>
+						<a id="link-2-header"><p class="hide-for-small-only">L'action de care</p></a>
+						<img class="float-right" alt="Je donne" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/img-jedonne.png">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -44,11 +48,15 @@
 							</p>
 						</div>
 						<div class="button-container-slide-show">
-							<img alt="Voir la vidéo" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/btn-video.png">
+							<a href="#video"><img alt="Voir la vidéo" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/btn-video.png"></a>
 							<img alt="Je donne" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/btn-jedonne.png">
 						</div>
 						<a><img class="btn-prev slidesjs-previous slidesjs-navigation" alt="Précédent" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/btn-prev.png"></a>
 						<a><img class="btn-suiv slidesjs-next slidesjs-navigation" alt="Suivant" src="https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/btn-next.png"></a>
+					</div>
+					<div class="remodal" data-remodal-id="video">
+						<button data-remodal-action="close" class="remodal-close"></button>
+						<iframe src="https://player.vimeo.com/video/186261603" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 
 					<div class="small-12 large-offset-2 large-8 columns slide-show deux">
@@ -274,5 +282,6 @@
 	<script src="assets/js/jquery.slides.js" type="text/javascript"></script>
 	<script src="assets/js/app.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
+	<script src="assets/js/remodal.js" type="text/javascript"></script>
 </body>
 </html>

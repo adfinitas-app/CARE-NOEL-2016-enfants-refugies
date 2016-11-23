@@ -27,7 +27,6 @@
 	src: url('../fonts/48.ttf');
 }
 
-
 .max-width {
 	margin: auto !important;
 	max-width: 75rem !important;
@@ -35,9 +34,13 @@
 
 
 #header {
-	padding-top: 10px;
 	max-width: 100%;
-	background-color: #f1eeea;
+}
+.container-fixed-header {
+	position: fixed; 
+	background-color: #f1eeea; 
+	width: 100%; 
+	z-index: 9999;
 }
 
 #logo {
@@ -75,6 +78,7 @@
 	margin-right: 20px;
 }
 #slide-show {
+	margin-top: 120px;
 	padding-top: 20px;
 }
 #slide-show h1, h3 {

@@ -75,6 +75,12 @@ $('.btn-temoignage').click( function() {
 	});
 });
 
+$('#link-1-header').click( function() {
+	scrollTo($('#slide-show'));
+});
+$('#link-2-header').click( function() {
+	scrollTo($('#slide-bg-white'));
+});
 function 	scrollTo(next){
 	if ($(next).length != 0)
 	{
