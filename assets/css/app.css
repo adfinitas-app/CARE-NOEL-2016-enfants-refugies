@@ -504,11 +504,11 @@ footer .lgrey{
 	.dessous.un {
 		background-position: 60% 90%;
 	}
-	.dessus.deux
+	.dessus.deux,
 	.dessous.deux {
 		background-position: 30% 90%;
 	}
-	.dessus.trois 
+	.dessus.trois, 
 	.dessous.trois {
 		background-position: 30% 90%;
 	}
