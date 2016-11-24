@@ -21,39 +21,16 @@ $(document).ready( function() {
 		});
 	});
 });
-/*
-$(".btn-temoignage").click(function () {
-	console.log('Hello');
-	var clas;
-	var str1 = ".row-infos";
 
-	if ($(this).hasClass('un'))
-		clas='.un';
-	else if ($(this).hasClass('deux'))
-		clas='.deux';
-	else if ($(this).hasClass('trois'))
-		clas='.trois';
-	clas = str1.concat(clas);
-	$('.div-temoignage').css({'width'}:'0%');
-	/*$(".div-temoignage").animate({ width: "100%" }, 
-	{
-		duration: 1000,
-		specialEasing: {
-			width: 'linear'
-		}
-	});
-});*/
-
-$('.btn-temoignage').click( function() {
+function getClass(item, str1, str2) {
 	var classe;
-	var str1 = ".dessus";
-	var str2 = ".container-down-small"
 
-	if ($(this).hasClass('un'))
+	console.log("item ==" + $(item));
+	if (item.hasClass('un'))
 		classe = ".un";
-	else if ($(this).hasClass('deux'))
+	else if (item.hasClass('deux'))
 		classe = ".deux";
-	else if ($(this).hasClass('trois'))
+	else if (item.hasClass('trois'))
 		classe = ".trois";
 	if ($(window).width() < 640) {
 		classe = str2.concat(classe);
@@ -62,6 +39,36 @@ $('.btn-temoignage').click( function() {
 		return false;
 	}
 	classe = str1.concat(classe);
+	console.log(classe);
+	return classe;
+}
+
+$('.btn-return').click( function() {
+	var classe;
+
+	if ((classe = getClass($(this), ".dessus", ".container-down-small")) == false)
+		return false;
+	$(classe).css({"display":"block"});
+
+	$(classe).animate({
+		width: "100%"
+	}, {
+		duration: 800,
+		specialEasing: {
+			width: "linear",
+		},
+		complete: function() {
+		}
+	});
+});
+
+$('.btn-temoignage').click( function() {
+	var classe;
+
+	if ((classe = getClass($(this), ".dessus", ".container-down-small")) == false)
+		return false;
+
+
 	$(classe).animate({
 		width: "0%"
 	}, {

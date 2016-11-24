@@ -46,7 +46,8 @@
 
 #logo {
 	float: right;
-	max-width: 80px;
+	max-width: 70px;
+	margin-top: 4px;
 }
 #burger {
 	margin-top: 61px;
@@ -107,7 +108,7 @@
 	display: inline-block;
 	vertical-align: bottom;
 	text-transform: uppercase;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 	margin-right: 20px;
 }
 #slide-show {
@@ -140,11 +141,11 @@
 .slidesjs-control,
 #slides {
 	min-height: 500px !important;
-	max-height: 550px !important;
+	max-height: 525px !important;
 }
 .slide-show {
 	height: 500px;
-	padding: 60px;
+	padding: 50px;
 	background-repeat: no-repeat;
 	background-position: 70% 50%;
 }
@@ -169,7 +170,7 @@
 .button-container-slide-show img {
 	max-width: 234px;
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 9px;
 }
 .titre-slide-show {
 	text-transform: uppercase;
@@ -205,6 +206,15 @@
 	position: absolute;
 	right: 10px;
 	top: 49%;
+}
+
+.btn-return {
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+}
+.btn-return.un {
+	bottom: 0;
 }
 
 .dessus {
@@ -282,7 +292,7 @@
 }
 .box-price > p {
 	font-family: "Open Sans";
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.4;
 }
 .box-description {
@@ -358,7 +368,7 @@ footer .lgrey{
 }
 
 #slide-bg-jaune h2 {
-	color: white;
+	color: #2C1313;
 	font-family: "ITC Officina";
 	font-weight: bold;
 	line-height: 1.2;
@@ -379,8 +389,10 @@ footer .lgrey{
 	font-weight: bold;
 }
 #slide-bg-white  {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	max-width: 100%;
+	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/bg-texture.jpg");
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 #slide-bg-white h2 {
 	line-height: 1.2;
@@ -401,7 +413,6 @@ footer .lgrey{
 	max-width: 100%;
 	padding-top: 50px;
 	padding-bottom: 70px;
-	background-image: url("https://s3.amazonaws.com/heroku-adfinitas-campaign/care-noel-2016/bg-texture.jpg");
 }
 
 .container-down {
