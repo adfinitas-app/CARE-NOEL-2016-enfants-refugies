@@ -8,8 +8,7 @@
 @font-face {
 	font-family: "ITC Officina";
 	font-weight: bold;
-	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/ITC_Officina_Serif_Bold.ttf') format('truetype');
+	src: url('../fonts/ITC_Officina_Serif_Bold.ttf') format('truetype');
 }
 @font-face {
 	font-family: "ITC Officina Book";
