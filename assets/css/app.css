@@ -2,29 +2,30 @@
 	font-family: "ITC Officina";
 	font-weight: bold;
 	font-style: italic;
-	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/ITC_Officina_Serif_Bold_Italic.ttf') format('truetype');
+	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'), 
+         url('myfont-webfont.ttf')  format('truetype');
 }
 @font-face {
 	font-family: "ITC Officina";
-	font-weight: bold;
+	src: url('../fonts/OfficinaSerif.eot') format('embedded-opentype'),
 	src: url('../fonts/ITC_Officina_Serif_Bold.ttf') format('truetype');
+	font-weight: bold;
 }
 @font-face {
 	font-family: "ITC Officina Book";
+	src: url('../fonts/OfficinaSerif.eot') format('embedded-opentype'),
+	src: url('../fonts/ITC_Officina_Serif_Book_Italic.ttf') format('truetype');
 	font-style: italic;
-	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/ITC_Officina_Serif_Book_Italic.ttf') format('truetype');
 }
 @font-face {
 	font-family: "ITC Officina Book";
-	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/ITC_Officina_Serif_Book.ttf') format('truetype');
+	src: url('../fonts/OfficinaSerif.eot') format('embedded-opentype'),
+	src: url('../fonts/ITC_Officina_Serif_Book.ttf') format('truetype');
 }
 @font-face {
 	font-family: "Newzald";
-	src: url('../fonts/newzald-medium.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/newzald-medium.ttf') format('truetype');
+	src: url('../fonts/newzald-medium.eot') format('embedded-opentype'),
+	src: url('../fonts/newzald-medium.ttf') format('truetype');
 }
 @font-face {
 	font-family: "48";
