@@ -7,7 +7,6 @@
 @font-face {
 	font-family: "ITC Officina";
 	font-weight: bold;
-	src: url('../fonts/OfficinaSerif.eot') format('embedded-opentype'),
 	src: url('../fonts/ITC_Officina_Serif_Bold.ttf') format('truetype');
 }
 @font-face {
