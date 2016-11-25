@@ -24,7 +24,7 @@
 }
 @font-face {
 	font-family: "Newzald";
-	src: url('../fonts/newzald-medium.eot') format('embedded-opentype'),
+	src: url('../fonts/newzald-medium.eot?#iefix') format('embedded-opentype'),
 	src: url('../fonts/newzald-medium.ttf') format('truetype');
 }
 @font-face {
