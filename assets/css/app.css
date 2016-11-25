@@ -1,15 +1,18 @@
 @font-face {
-	font-family: "ITC Officina";
-	font-weight: bold;
-	font-style: italic;
-	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'),
-	src: url('myfont-webfont.ttf')  format('truetype');
+    font-family: 'ITC Officina';
+    src: url('../fonts/itc_officina_serif_bold_italic-webfont.woff2') format('woff2'),
+         url('../fonts/itc_officina_serif_bold_italic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
 }
 @font-face {
-	font-family: "ITC Officina";
-	font-weight: bold;
-	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'),
-	src: url('../fonts/ITC_Officina_Serif_Bold.ttf') format('truetype');
+    font-family: 'ITC Officina';
+    src: url('../fonts/itc_officina_serif_bold-webfont.woff2') format('woff2'),
+         url('../fonts/itc_officina_serif_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
 }
 @font-face {
 	font-family: "ITC Officina Book";
@@ -30,6 +33,35 @@
 @font-face {
 	font-family: "48";
 	src: url('../fonts/48.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'itc_officina_serifbook_italic';
+    src: url('../fonts/itc_officina_serif_book_italic-webfont.woff2') format('woff2'),
+         url('../fonts/itc_officina_serif_book_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'itc_officina_serifbook';
+    src: url('../fonts/itc_officina_serif_book-webfont.woff2') format('woff2'),
+         url('../fonts/itc_officina_serif_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .max-width {
