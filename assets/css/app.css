@@ -2,8 +2,7 @@
 	font-family: "ITC Officina";
 	font-weight: bold;
 	font-style: italic;
-	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'), 
-         url('myfont-webfont.ttf')  format('truetype');
+	src: url('myfont-webfont.ttf')  format('truetype');
 }
 @font-face {
 	font-family: "ITC Officina";
