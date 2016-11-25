@@ -1,7 +1,6 @@
 @font-face {
 	font-family: "ITC Officina";
 	src: url('../fonts/ITC_Officina_Serif_Bold_Italic.ttf');
-	src: url('../fonts/OfficinaSerif.eot');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -14,13 +13,11 @@
 @font-face {
 	font-family: "ITC Officina Book";
 	src: url('../fonts/ITC_Officina_Serif_Book_Italic.ttf');
-	src: url('../fonts/OfficinaSerif.eot');
 	font-style: italic;
 }
 @font-face {
 	font-family: "ITC Officina Book";
 	src: url('../fonts/ITC_Officina_Serif_Book.ttf');
-	src: url('../fonts/OfficinaSerif.eot');
 }
 @font-face {
 	font-family: "Newzald";
