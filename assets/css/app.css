@@ -7,15 +7,15 @@
 }
 @font-face {
 	font-family: "ITC Officina";
+	font-weight: bold;
 	src: url('../fonts/OfficinaSerif.eot') format('embedded-opentype'),
 	src: url('../fonts/ITC_Officina_Serif_Bold.ttf') format('truetype');
-	font-weight: bold;
 }
 @font-face {
 	font-family: "ITC Officina Book";
+	font-style: italic;
 	src: url('../fonts/OfficinaSerif.eot') format('embedded-opentype'),
 	src: url('../fonts/ITC_Officina_Serif_Book_Italic.ttf') format('truetype');
-	font-style: italic;
 }
 @font-face {
 	font-family: "ITC Officina Book";
