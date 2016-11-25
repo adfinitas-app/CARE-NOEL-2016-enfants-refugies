@@ -1,9 +1,9 @@
 @font-face {
 	font-family: "ITC Officina";
-	src: url('../fonts/OfficinaSerif.eot') format('embedded-opentype'),
-	src: url('../fonts/ITC_Officina_Serif_Bold_Italic.ttf') format('truetype');
 	font-weight: bold;
 	font-style: italic;
+	src: url('../fonts/OfficinaSerif.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/ITC_Officina_Serif_Bold_Italic.ttf') format('truetype');
 }
 @font-face {
 	font-family: "ITC Officina";
