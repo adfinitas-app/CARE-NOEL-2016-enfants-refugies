@@ -1,5 +1,4 @@
 $(window).resize( function() {
-	console.log($(window).innerWidth());
 	adjust_don_box();
 });
 
@@ -25,7 +24,6 @@ $(document).ready( function() {
 function getClass(item, str1, str2) {
 	var classe;
 
-	console.log("item ==" + $(item));
 	if (item.hasClass('un'))
 		classe = ".un";
 	else if (item.hasClass('deux'))
@@ -34,12 +32,10 @@ function getClass(item, str1, str2) {
 		classe = ".trois";
 	if ($(window).width() < 640) {
 		classe = str2.concat(classe);
-		console.log(classe);
 		scrollTo($(classe));
 		return false;
 	}
 	classe = str1.concat(classe);
-	console.log(classe);
 	return classe;
 }
 
