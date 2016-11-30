@@ -570,6 +570,8 @@ footer .lgrey{
 		background-position: 30% 90%;
 	}
 	#logo {
+		margin-left: 10px;
 		float: none;
+		max-width: 60px;
 	}
 }
