@@ -108,6 +108,9 @@
 	font-weight: bold;
 	line-height: 1;
 }
+#video {
+	width: 100% !important;
+}
 .element-d-menu {
 	margin-right: 10px !important;
 	margin-left: 10px !important;
