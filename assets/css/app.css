@@ -158,6 +158,10 @@
 	margin-right: 25px;
 	margin-left: 10px;
 }
+.block-header img {
+	min-width: 188px;
+	width: 188px;
+}
 #slide-show {
 	margin-top: 120px;
 	padding-top: 20px;
