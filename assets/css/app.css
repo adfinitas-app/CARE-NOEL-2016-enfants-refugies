@@ -159,8 +159,7 @@
 	margin-left: 10px;
 }
 .block-header img {
-	min-width: 188px;
-	width: 188px;
+
 }
 #slide-show {
 	margin-top: 120px;
@@ -559,6 +558,16 @@ footer .lgrey{
 	}
 	.block-header p:nth-child(2) {
 		margin-right: 0px;
+	}
+}
+@media only screen and (max-width:310px) {
+	#burger {
+		margin-top: 57px;
+	}
+}
+@media only screen and (max-width:304px) {
+	#burger {
+		margin-top: 54px;
 	}
 }
 
