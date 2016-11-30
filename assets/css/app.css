@@ -563,6 +563,10 @@ footer .lgrey{
 }
 
 @media only screen and (max-width:640px) {
+	.first-block-header {
+		width: 40%;
+		padding: 0 !important;
+	}
 	.dessus.un,
 	.dessous.un {
 		background-position: 60% 90%;
