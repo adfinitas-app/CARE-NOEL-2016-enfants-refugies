@@ -149,7 +149,8 @@
 	vertical-align: bottom;
 	text-transform: uppercase;
 	padding-bottom: 0px;
-	margin-right: 20px;
+	margin-right: 25px;
+	margin-left: 10px;
 }
 #slide-show {
 	margin-top: 120px;
@@ -224,9 +225,10 @@
 }
 .text-slide-show {
 	font-weight: 400;
+	font-style: italic;
 }
 .un .text-slide-show {
-	margin-bottom: 140px;
+	margin-bottom: 120px;
 }
 .deux .text-slide-show {
 	margin-bottom: 80px;
@@ -511,13 +513,6 @@ footer .lgrey{
 
 
 @media only screen and (max-width:730px) {
-	.block-header p {
-		font-size: 18px;
-		margin-right: 5px;
-	}
-	.block-header p:nth-child(2) {
-		margin-right: 0px;
-	}
 	#header {
 		padding-right: 0;
 	}
@@ -536,6 +531,25 @@ footer .lgrey{
 @media only screen and (max-width:600px) {
 	.box-price {
 		width: 90%;
+	}
+}
+@media only screen and (max-width:1088px) {
+	.block-header p {
+		margin-right: 10px;
+	}
+	.link-1-header > p{
+		margin-left: 0;
+	}
+	.link-2-header {
+		margin-right: 0px;
+	}
+}
+@media only screen and (max-width:1010px) {
+	.fixed-width {
+		min-width: 300px;
+	}
+	.block-header p:nth-child(2) {
+		margin-right: 0px;
 	}
 }
 
