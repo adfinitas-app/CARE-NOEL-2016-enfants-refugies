@@ -68,6 +68,9 @@
 	margin: auto !important;
 	max-width: 75rem !important;
 }
+.italic {
+	font-style: italic;
+}
 
 
 #header {
@@ -228,7 +231,6 @@
 }
 .text-slide-show {
 	font-weight: 400;
-	font-style: italic;
 }
 .un .text-slide-show {
 	margin-bottom: 120px;
