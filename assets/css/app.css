@@ -317,23 +317,8 @@
 	max-width: 800px;
 	margin-bottom: 40px;
 }
-#adFdon-parent {
-	background-color: #076177;
-	padding: 50px;
-	padding-left: 40px;
-	padding-right: 40px;
-}
 #adFdon-parent > *, .box-price > * {
 	display: inline-block;
-}
-#adFdon-parent > h2 {
-	color: white;
-	font-family: "ITC Officina", serif;
-	font-size: 25px;
-	line-height: 1;
-	text-transform: uppercase;
-	max-width: 800px;
-	margin-bottom: 40px;
 }
 .box-container {
 	margin-bottom: 30px;
